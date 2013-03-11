@@ -4,9 +4,25 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="plone.app.modernizr">
 
+  <include package="Products.CMFCore" file="permissions.zcml"/>
+  <include package="plone.resource" />
+  <include package="plone.app.registry"/>
+
   <browser:resourceDirectory
     name="plone.app.modernizr"
     directory="resources"
+    />
+  <browser:page
+    name="plone.app.modernizr.custom.js"
+    for="*"
+    class=".resources.ModernizrCustomJS"
+    permission="zope2.Public"
+    />
+  <browser:page
+    name="plone.app.modernizr.download"
+    for="*"
+    class=".resources.Download"
+    permission="cmf.ManagePortal"
     />
 
   <genericsetup:registerProfile
@@ -19,11 +35,11 @@
 
   <genericsetup:upgradeStep
       source="*"
-      destination="1000"
-      title="Remove modernizr from 3rdParty registred in portal_javascripts"
+      destination="1001"
+      title="Common"
       description=""
       profile="plone.app.modernizr:default"
-      handler=".upgrades.remove_plone3rdParty_modernizr"
+      handler=".upgrades.common"
       />
 
 </configure>

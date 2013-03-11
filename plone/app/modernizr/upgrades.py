@@ -1,7 +1,7 @@
 from Products.CMFCore.utils import getToolByName
+PROFILE = 'profile-plone.app.modernizr:default'
 
-def remove_plone3rdParty_modernizr(context):
-    """This is the future upgrade that will be applied to Plone"""
-    jsregistry = getToolByName(context, 'portal_javascripts')
-    jsregistry.unregisterResource('modernizr.js')
-    jsregistry.cookResources()
+
+def common(context):
+    setup = getToolByName(context, 'portal_setup')
+    setup.runAllImportStepsFromProfile(PROFILE)
