@@ -1,10 +1,9 @@
 <?xml version="1.0"?>
 <object name="portal_javascripts">
 
- <javascript id="@@plone.app.modernizr.custom.js" insert-before="*" />
+ <javascript id="++resource++plone.app.modernizr.custom.js" insert-before="*"/>
 
  <!-- at the moment, just unactivate it, will be deleted by upgrade step -->
  <javascript id="modernizr.js" enabled="false" />
- <javascript remove="True" id="++resource++plone.app.modernizr/modernizr.js" />
 
 </object>

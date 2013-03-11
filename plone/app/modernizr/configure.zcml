@@ -8,9 +8,9 @@
   <include package="plone.resource" />
   <include package="plone.app.registry"/>
 
-  <browser:resourceDirectory
-    name="plone.app.modernizr"
-    directory="resources"
+  <browser:resource
+    name="plone.app.modernizr.custom.js"
+    directory="modernizr.custom.js"
     />
   <browser:page
     name="plone.app.modernizr.custom.js"
@@ -35,7 +35,7 @@
 
   <genericsetup:upgradeStep
       source="*"
-      destination="1001"
+      destination="1002"
       title="Common"
       description=""
       profile="plone.app.modernizr:default"
