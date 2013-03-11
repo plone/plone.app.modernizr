@@ -3,7 +3,7 @@ Introduction
 
 This addon register Modernizr_ into Plone's resource registry
 
-version: 2.0.4
+version: 2.6.2
 
 About Modernizr
 ===============
