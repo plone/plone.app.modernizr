@@ -10,13 +10,7 @@
 
   <browser:resource
     name="plone.app.modernizr.custom.js"
-    directory="modernizr.custom.js"
-    />
-  <browser:page
-    name="plone.app.modernizr.custom.js"
-    for="*"
-    class=".resources.ModernizrCustomJS"
-    permission="zope2.Public"
+    file="modernizr.custom.js"
     />
   <browser:page
     name="plone.app.modernizr.download"
