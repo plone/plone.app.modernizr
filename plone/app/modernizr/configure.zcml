@@ -27,13 +27,4 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
-  <genericsetup:upgradeStep
-      source="*"
-      destination="1002"
-      title="Common"
-      description=""
-      profile="plone.app.modernizr:default"
-      handler=".upgrades.common"
-      />
-
 </configure>
