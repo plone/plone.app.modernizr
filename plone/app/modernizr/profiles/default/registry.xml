@@ -1,5 +1,9 @@
 <registry>
 
-    <records interface="plone.app.modernizr.resources.IModernizr"/>
+    <records interface="plone.app.modernizr.resources.IModernizr">
+      <value key="tests" purge="False">
+        <element>history</element>
+      </value>
+    </records>
 
 </registry>
