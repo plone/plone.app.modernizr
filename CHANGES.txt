@@ -3,5 +3,6 @@ Changelog
 
 1.0dev (unreleased)
 -------------------
+- Changed the package documentation files [macagua]
 - Update MANIFEST.in [mamico]
 - Initial release
