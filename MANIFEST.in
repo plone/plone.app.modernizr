@@ -1,4 +1,6 @@
-include LICENSE *.txt *.rst *.GPL *.py
+include *.rst *.txt *.py
+
 recursive-include plone *
 recursive-include docs *
+
 global-exclude *pyc
