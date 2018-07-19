@@ -7,7 +7,7 @@ setup(name='plone.app.modernizr',
       version=version,
       description="Modernizr Javascript library registration in Plone",
       long_description=open("README.rst").read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
+                       open("CHANGES.txt").read(),
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
