@@ -76,5 +76,5 @@ FS: using your own addon / policy
     </records>
   </registry>
 
-This way futur maintainer or integrator will be able to provide an updated
-version of modernizr without forgeting tests.
+This way future maintainer or integrator will be able to provide an updated
+version of modernizr without forgetting tests.
